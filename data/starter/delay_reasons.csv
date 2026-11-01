@@ -1,0 +1,7 @@
+delay_id,reason_code,description,severity
+DLY-2026-000001,WEATHER,Severe weather hazard or meteorological disturbance along route,4
+DLY-2026-000002,FACILITY_QUEUE,"Terminal dock congestion, gate dwell, and facility queue delay",3
+DLY-2026-000003,CARRIER_DELAY,Carrier operational transit slowdown below scheduled speed,3
+DLY-2026-000004,ROUTE_CHANGE,Detour mileage and handling penalty resulting from dynamic reroute,3
+DLY-2026-000005,CALENDAR_CLOSURE,"Operating schedule hold during night, weekend, or holiday closure",2
+DLY-2026-000006,LATE_PICKUP,Dispatch preparation delay at origin facility prior to departure,2

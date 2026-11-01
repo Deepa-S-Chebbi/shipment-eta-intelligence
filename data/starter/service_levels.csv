@@ -1,0 +1,5 @@
+service_level_id,name,target_hours,grace_hours,severely_delayed_hours,effective_from,effective_to
+SL-EXP-24H,Priority Express 24H,24,2.0,6.0,2026-03-01T00:00:00Z,2026-04-30T00:00:00Z
+SL-EXP-48H,Standard Express 48H,48,4.0,12.0,2026-03-01T00:00:00Z,2026-04-30T00:00:00Z
+SL-FRT-120H,Freight Economy 120H,120,12.0,36.0,2026-03-01T00:00:00Z,2026-04-30T00:00:00Z
+SL-STD-72H,Ground Standard 72H,72,6.0,18.0,2026-03-01T00:00:00Z,2026-04-30T00:00:00Z

@@ -1,0 +1,11 @@
+facility_id,name,type,region,latitude,longitude,capacity_per_hour,timezone
+FAC-001,South Hub #001,HUB,South,365.62,325.03,459,UTC
+FAC-002,South Hub #002,HUB,South,232.02,250.24,412,UTC
+FAC-003,South Port #003,PORT,South,216.56,51.09,280,UTC
+FAC-004,South Port #004,PORT,South,334.85,55.56,216,UTC
+FAC-005,East Hub #005,HUB,East,950.0,848.77,353,UTC
+FAC-006,West Hub #006,HUB,West,202.6,726.73,380,UTC
+FAC-007,West Depot #007,DEPOT,West,55.91,892.4,104,UTC
+FAC-008,East Hub #008,HUB,East,721.49,781.3,451,UTC
+FAC-009,West Hub #009,HUB,West,246.43,746.48,395,UTC
+FAC-010,East Depot #010,DEPOT,East,884.55,624.89,127,UTC

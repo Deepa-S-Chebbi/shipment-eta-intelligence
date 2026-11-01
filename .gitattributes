@@ -1,0 +1,11 @@
+# Force LF line endings for all text files across Windows, Linux, and macOS
+* text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.sqlite binary
+*.db binary
+*.pyc binary
+

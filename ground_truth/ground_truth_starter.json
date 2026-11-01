@@ -1,0 +1,672 @@
+[
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000001-20260305T1929-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-05T19:29:50.571937Z",
+    "injected_value": "2026-03-06T01:29:50.571937Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000008-20260309T1322",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-09T13:22:48Z",
+    "injected_value": "2026-03-09T19:22:48Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000008-20260310T1322-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-10T13:22:48Z",
+    "injected_value": "2026-03-10T19:22:48Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000015-20260305T1502",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-05T15:02:21.149823Z",
+    "injected_value": "2026-03-05T21:02:21.149823Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000019-20260314T0233-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-14T02:33:12Z",
+    "injected_value": "2026-03-14T08:33:12Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000025-20260313T0839",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-13T08:39:00.343572Z",
+    "injected_value": "2026-03-13T14:39:00.343572Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000035-20260305T1051-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-05T10:51:51.565773Z",
+    "injected_value": "2026-03-05T16:51:51.565773Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000042-20260316T1756-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-16T17:56:07.945860Z",
+    "injected_value": "2026-03-16T23:56:07.945860Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000043-20260324T1906",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-24T19:06:46.772790Z",
+    "injected_value": "2026-03-25T01:06:46.772790Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000062-20260324T1255-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-24T12:55:59Z",
+    "injected_value": "2026-03-24T18:55:59Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000080-20260320T1008-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-20T10:08:53Z",
+    "injected_value": "2026-03-20T16:08:53Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000102-20260305T1423-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-05T14:23:34.211572Z",
+    "injected_value": "2026-03-05T20:23:34.211572Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000103-20260317T0314",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-17T03:14:44Z",
+    "injected_value": "2026-03-17T09:14:44Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000123-20260308T0821",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-08T08:21:58.000016Z",
+    "injected_value": "2026-03-08T14:21:58.000016Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000148-20260314T0845-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-14T08:45:43Z",
+    "injected_value": "2026-03-14T14:45:43Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000165-20260321T1044-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-21T10:44:05Z",
+    "injected_value": "2026-03-21T16:44:05Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000178-20260310T1641",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-10T16:41:37Z",
+    "injected_value": "2026-03-10T22:41:37Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000180-20260317T1525-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-17T15:25:13.556882Z",
+    "injected_value": "2026-03-17T21:25:13.556882Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000213-20260313T0646",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-13T06:46:02Z",
+    "injected_value": "2026-03-13T12:46:02Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000238-20260316T1509-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-16T15:09:45.545038Z",
+    "injected_value": "2026-03-16T21:09:45.545038Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000292-20260303T0321-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-03T03:21:32Z",
+    "injected_value": "2026-03-03T09:21:32Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000300-20260316T0836",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-16T08:36:10Z",
+    "injected_value": "2026-03-16T14:36:10Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000329-20260313T2150-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-13T21:50:23Z",
+    "injected_value": "2026-03-14T03:50:23Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000350-20260306T0837",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-06T08:37:16Z",
+    "injected_value": "2026-03-06T14:37:16Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000354-20260316T1506-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-16T15:06:59Z",
+    "injected_value": "2026-03-16T21:06:59Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000362-20260320T1147-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-20T11:47:14Z",
+    "injected_value": "2026-03-20T17:47:14Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000370-20260324T0313-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-24T03:13:54Z",
+    "injected_value": "2026-03-24T09:13:54Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000388-20260319T1346-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-19T13:46:19.683137Z",
+    "injected_value": "2026-03-19T19:46:19.683137Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000398-20260303T0022-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-03T00:22:35Z",
+    "injected_value": "2026-03-03T06:22:35Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000406-20260304T0546-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-04T05:46:02Z",
+    "injected_value": "2026-03-04T11:46:02Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000408-20260319T1739-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-19T17:39:28.128065Z",
+    "injected_value": "2026-03-19T23:39:28.128065Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000413-20260313T1400-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-13T14:00:33Z",
+    "injected_value": "2026-03-13T20:00:33Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000414-20260307T2234-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-07T22:34:58Z",
+    "injected_value": "2026-03-08T04:34:58Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000420-20260312T1822",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-12T18:22:50.889013Z",
+    "injected_value": "2026-03-13T00:22:50.889013Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000422-20260311T0134",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-11T01:34:31.383248Z",
+    "injected_value": "2026-03-11T07:34:31.383248Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000434-20260319T2143",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-19T21:43:16Z",
+    "injected_value": "2026-03-20T03:43:16Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000450-20260321T0749-PLAN",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-21T07:49:21Z",
+    "injected_value": "2026-03-21T13:49:21Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000452-20260314T0622",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-14T06:22:18Z",
+    "injected_value": "2026-03-14T12:22:18Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000480-20260320T0924-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-20T09:24:19Z",
+    "injected_value": "2026-03-20T15:24:19Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000484-20260316T1136-PROG",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-16T11:36:00.817256Z",
+    "injected_value": "2026-03-16T17:36:00.817256Z"
+  },
+  {
+    "record_type": "ETAEstimate",
+    "record_id": "ETA-SHP-2026-000494-20260324T1053",
+    "issue_type": "ETA_USES_FUTURE_EVENT",
+    "description": "ETA estimate incorporates tracking events ingested after prediction timestamp",
+    "expected_decision": "FLAG_DATA_LEAKAGE",
+    "injected_field": "features_cutoff_time",
+    "original_value": "2026-03-24T10:53:08Z",
+    "injected_value": "2026-03-24T16:53:08Z"
+  },
+  {
+    "record_type": "Shipment",
+    "record_id": "SHP-2026-000081",
+    "issue_type": "DELIVERED_STILL_IN_TRANSIT",
+    "description": "Shipment has terminal DELIVERED event but state machine status remains IN_TRANSIT",
+    "expected_decision": "FORCE_STATE_RECONCILIATION",
+    "injected_field": "current_status",
+    "original_value": "DELIVERED",
+    "injected_value": "IN_TRANSIT"
+  },
+  {
+    "record_type": "Shipment",
+    "record_id": "SHP-2026-000104",
+    "issue_type": "DELIVERED_STILL_IN_TRANSIT",
+    "description": "Shipment has terminal DELIVERED event but state machine status remains IN_TRANSIT",
+    "expected_decision": "FORCE_STATE_RECONCILIATION",
+    "injected_field": "current_status",
+    "original_value": "DELIVERED",
+    "injected_value": "IN_TRANSIT"
+  },
+  {
+    "record_type": "ShipmentLeg",
+    "record_id": "LEG-SHP-2026-000019-01",
+    "issue_type": "IMPOSSIBLE_ROUTE_ORDER",
+    "description": "Leg actual arrival timestamp precedes actual departure timestamp",
+    "expected_decision": "QUARANTINE_RECORD",
+    "injected_field": "actual_arrive_at",
+    "original_value": "2026-03-14T13:15:57.267409Z",
+    "injected_value": "2026-03-13T13:52:24.823741Z"
+  },
+  {
+    "record_type": "ShipmentLeg",
+    "record_id": "LEG-SHP-2026-000055-02",
+    "issue_type": "IMPOSSIBLE_ROUTE_ORDER",
+    "description": "Leg actual arrival timestamp precedes actual departure timestamp",
+    "expected_decision": "QUARANTINE_RECORD",
+    "injected_field": "actual_arrive_at",
+    "original_value": "2026-03-25T05:45:13.037483Z",
+    "injected_value": "2026-03-24T07:06:45.816251Z"
+  },
+  {
+    "record_type": "ShipmentLeg",
+    "record_id": "LEG-SHP-2026-000070-01",
+    "issue_type": "IMPOSSIBLE_ROUTE_ORDER",
+    "description": "Leg actual arrival timestamp precedes actual departure timestamp",
+    "expected_decision": "QUARANTINE_RECORD",
+    "injected_field": "actual_arrive_at",
+    "original_value": "2026-03-17T04:22:33.736794Z",
+    "injected_value": "2026-03-16T07:59:14.412378Z"
+  },
+  {
+    "record_type": "ShipmentLeg",
+    "record_id": "LEG-SHP-2026-000282-01",
+    "issue_type": "IMPOSSIBLE_ROUTE_ORDER",
+    "description": "Leg actual arrival timestamp precedes actual departure timestamp",
+    "expected_decision": "QUARANTINE_RECORD",
+    "injected_field": "actual_arrive_at",
+    "original_value": "2026-03-07T16:51:50.985992Z",
+    "injected_value": "2026-03-06T19:32:13.755909Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000002-000004",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-06T23:26:19.092427Z",
+    "injected_value": "2026-03-07T00:33:10.924811Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000019-000003",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-13T15:52:24.823741Z",
+    "injected_value": "2026-03-13T17:35:41.831576Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000038-000006",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-08T12:35:31.198724Z",
+    "injected_value": "2026-03-08T13:39:30.581403Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000066-000004",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-18T22:36:05.987302Z",
+    "injected_value": "2026-03-18T23:59:40.003659Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000089-000002",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-23T06:00:00Z",
+    "injected_value": "2026-03-23T08:17:58.523089Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000141-000005",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-16T15:26:25.692859Z",
+    "injected_value": "2026-03-16T17:15:06.494610Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000149-000005",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-18T21:01:20.956929Z",
+    "injected_value": "2026-03-19T06:53:56.172289Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000178-000004",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-11T13:13:50.535199Z",
+    "injected_value": "2026-03-11T15:03:14.713834Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000246-000006",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-13T14:52:17.975288Z",
+    "injected_value": "2026-03-13T17:04:20.449015Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000266-000002",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-09T18:00:52.503030Z",
+    "injected_value": "2026-03-09T18:57:07.108391Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000281-000007",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-06T18:24:30.498951Z",
+    "injected_value": "2026-03-06T20:08:46.563414Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000289-000005",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-04T23:19:08.152929Z",
+    "injected_value": "2026-03-05T01:35:39.881977Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000296-000004",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-24T09:22:03.592411Z",
+    "injected_value": "2026-03-24T10:12:29.416740Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000301-000003",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-23T15:57:14.132759Z",
+    "injected_value": "2026-03-23T17:19:35.241760Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000318-000003",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-21T19:18:43.135020Z",
+    "injected_value": "2026-03-21T20:36:28.301433Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000376-000004",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-19T11:01:45.411425Z",
+    "injected_value": "2026-03-19T12:25:05.818049Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000402-000007",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-19T06:00:00Z",
+    "injected_value": "2026-03-19T07:49:53.744717Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000449-000008",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-06T15:08:44.047135Z",
+    "injected_value": "2026-03-06T17:12:47.349282Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000488-000002",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-09T15:57:25.575654Z",
+    "injected_value": "2026-03-09T17:15:06.109661Z"
+  },
+  {
+    "record_type": "TrackingEvent",
+    "record_id": "EVT-SHP-2026-000498-000005",
+    "issue_type": "EVENT_TIME_INGESTION_CONFUSION",
+    "description": "Event timestamp corrupted to occur after database ingestion timestamp",
+    "expected_decision": "IMPUTE_EVENT_TIME",
+    "injected_field": "event_time",
+    "original_value": "2026-03-07T09:01:35.299929Z",
+    "injected_value": "2026-03-07T10:22:04.619850Z"
+  }
+]

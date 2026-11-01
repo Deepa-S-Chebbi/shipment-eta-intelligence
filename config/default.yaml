@@ -1,0 +1,105 @@
+# YottaFlex AI Synthetic Logistics Data Configuration (Full Scale)
+project:
+  name: "yottaflex-eta-delay-data"
+  version: "1.0.0"
+  seed: 20261022
+  scale: 1.0
+
+simulation:
+  start_date: "2026-03-01T00:00:00Z"
+  duration_days: 90
+  grid_size_km: 1000.0
+
+targets:
+  num_shipments: 50000
+  target_events: 300000
+  num_facilities: 100
+  num_disruption_windows: 1000
+  disruption_split:
+    weather: 650
+    facility: 350
+  num_carriers: 12
+  num_routes: 120
+
+master_data:
+  regions: ["North", "South", "East", "West"]
+  carrier_modes: ["ROAD", "RAIL", "AIR", "SEA"]
+  carrier_reliability_tiers:
+    tier_1:
+      weight: 0.35
+      mu: -0.005
+      sigma: 0.05
+    tier_2:
+      weight: 0.45
+      mu: 0.015
+      sigma: 0.12
+    tier_3:
+      weight: 0.20
+      mu: 0.050
+      sigma: 0.22
+  facility_types:
+    HUB: { weight: 0.20, capacity_per_hour: 400, base_dwell_hours: 1.5 }
+    DEPOT: { weight: 0.45, capacity_per_hour: 120, base_dwell_hours: 2.5 }
+    WAREHOUSE: { weight: 0.25, capacity_per_hour: 80, base_dwell_hours: 4.0 }
+    PORT: { weight: 0.10, capacity_per_hour: 250, base_dwell_hours: 8.0 }
+  service_levels:
+    - id: "SL-EXP-24H"
+      name: "Priority Express 24H"
+      target_hours: 24
+      grace_hours: 2.0
+      severely_delayed_hours: 6.0
+      weight: 0.20
+    - id: "SL-EXP-48H"
+      name: "Standard Express 48H"
+      target_hours: 48
+      grace_hours: 4.0
+      severely_delayed_hours: 12.0
+      weight: 0.40
+    - id: "SL-STD-72H"
+      name: "Ground Standard 72H"
+      target_hours: 72
+      grace_hours: 6.0
+      severely_delayed_hours: 18.0
+      weight: 0.30
+    - id: "SL-FRT-120H"
+      name: "Freight Economy 120H"
+      target_hours: 120
+      grace_hours: 12.0
+      severely_delayed_hours: 36.0
+      weight: 0.10
+
+weather_types:
+  RAIN: { weight: 0.35, min_speed_mult: 1.05, max_speed_mult: 1.25 }
+  STORM: { weight: 0.25, min_speed_mult: 1.25, max_speed_mult: 1.70 }
+  FOG: { weight: 0.15, min_speed_mult: 1.10, max_speed_mult: 1.35 }
+  HEAT: { weight: 0.10, min_speed_mult: 1.02, max_speed_mult: 1.15 }
+  SNOW: { weight: 0.15, min_speed_mult: 1.30, max_speed_mult: 1.85 }
+
+ingestion_lag:
+  realtime:
+    weight: 0.82
+    shape: 2.0
+    scale_hours: 0.15
+  batch:
+    weight: 0.15
+    mu: 1.2
+    sigma: 0.6
+  heavy_tail:
+    weight: 0.03
+    beta_hours: 18.0
+
+anomalies:
+  event_time_ingestion_confusion: 0.006
+  impossible_route_order: 0.005
+  eta_uses_future_event: 0.005
+  delivered_still_in_transit: 0.004
+
+eta_snapshots:
+  horizons_hours: [24, 12, 6]
+  milestones: ["CREATED", "PICKED_UP", "LEG_ARRIVED"]
+
+paths:
+  starter_dir: "data/starter"
+  full_dir: "data/full"
+  ground_truth_dir: "ground_truth"
+  docs_dir: "docs"

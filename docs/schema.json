@@ -1,0 +1,174 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "YottaFlexLogisticsRelationalSchema",
+  "description": "Complete relational schema definition for YottaFlex AI Synthetic Logistics Project",
+  "version": "1.0.0",
+  "tables": {
+    "carriers": {
+      "primary_key": "carrier_id",
+      "id_regex": "^CAR-\\d{3}$",
+      "columns": {
+        "carrier_id": {"type": "string", "nullable": false},
+        "name": {"type": "string", "nullable": false},
+        "mode": {"type": "string", "enum": ["ROAD", "RAIL", "AIR", "SEA"], "nullable": false},
+        "reliability_tier": {"type": "string", "enum": ["TIER_1", "TIER_2", "TIER_3"], "nullable": false},
+        "base_speed_kmh": {"type": "number", "minimum": 10.0, "maximum": 1000.0, "nullable": false},
+        "effective_from": {"type": "string", "format": "date-time", "nullable": false},
+        "effective_to": {"type": "string", "format": "date-time", "nullable": false}
+      }
+    },
+    "facilities": {
+      "primary_key": "facility_id",
+      "id_regex": "^FAC-\\d{3}$",
+      "columns": {
+        "facility_id": {"type": "string", "nullable": false},
+        "name": {"type": "string", "nullable": false},
+        "type": {"type": "string", "enum": ["HUB", "DEPOT", "WAREHOUSE", "PORT"], "nullable": false},
+        "region": {"type": "string", "enum": ["North", "South", "East", "West"], "nullable": false},
+        "latitude": {"type": "number", "minimum": 0.0, "maximum": 1000.0, "nullable": false},
+        "longitude": {"type": "number", "minimum": 0.0, "maximum": 1000.0, "nullable": false},
+        "capacity_per_hour": {"type": "integer", "minimum": 1, "nullable": false},
+        "timezone": {"type": "string", "nullable": false}
+      }
+    },
+    "service_levels": {
+      "primary_key": "service_level_id",
+      "id_regex": "^SL-[A-Z]+-\\d+H$",
+      "columns": {
+        "service_level_id": {"type": "string", "nullable": false},
+        "name": {"type": "string", "nullable": false},
+        "target_hours": {"type": "integer", "minimum": 1, "nullable": false},
+        "grace_hours": {"type": "number", "minimum": 0.0, "nullable": false},
+        "severely_delayed_hours": {"type": "number", "minimum": 1.0, "nullable": false},
+        "effective_from": {"type": "string", "format": "date-time", "nullable": false},
+        "effective_to": {"type": "string", "format": "date-time", "nullable": false}
+      }
+    },
+    "routes": {
+      "primary_key": "route_id",
+      "id_regex": "^RTE-\\d{4}$",
+      "columns": {
+        "route_id": {"type": "string", "nullable": false},
+        "origin_facility_id": {"type": "string", "foreign_key": "facilities.facility_id", "nullable": false},
+        "destination_facility_id": {"type": "string", "foreign_key": "facilities.facility_id", "nullable": false},
+        "total_planned_hours": {"type": "number", "minimum": 0.1, "nullable": false},
+        "version": {"type": "integer", "minimum": 1, "nullable": false},
+        "effective_from": {"type": "string", "format": "date-time", "nullable": false},
+        "effective_to": {"type": "string", "format": "date-time", "nullable": false}
+      }
+    },
+    "route_leg_templates": {
+      "primary_key": "template_id",
+      "id_regex": "^RLT-\\d{6}$",
+      "columns": {
+        "template_id": {"type": "string", "nullable": false},
+        "route_id": {"type": "string", "foreign_key": "routes.route_id", "nullable": false},
+        "leg_sequence": {"type": "integer", "minimum": 1, "maximum": 4, "nullable": false},
+        "from_facility_id": {"type": "string", "foreign_key": "facilities.facility_id", "nullable": false},
+        "to_facility_id": {"type": "string", "foreign_key": "facilities.facility_id", "nullable": false},
+        "carrier_id": {"type": "string", "foreign_key": "carriers.carrier_id", "nullable": false},
+        "planned_duration_hours": {"type": "number", "minimum": 0.1, "nullable": false}
+      }
+    },
+    "weather_events": {
+      "primary_key": "weather_event_id",
+      "id_regex": "^WX-\\d{4}$",
+      "columns": {
+        "weather_event_id": {"type": "string", "nullable": false},
+        "window_type": {"type": "string", "enum": ["WEATHER", "FACILITY"], "nullable": false},
+        "type": {"type": "string", "enum": ["RAIN", "STORM", "FOG", "HEAT", "SNOW", "MAINTENANCE"], "nullable": false},
+        "severity": {"type": "integer", "minimum": 1, "maximum": 5, "nullable": false},
+        "start_time": {"type": "string", "format": "date-time", "nullable": false},
+        "end_time": {"type": "string", "format": "date-time", "nullable": false},
+        "region": {"type": "string", "enum": ["North", "South", "East", "West"], "nullable": false},
+        "speed_multiplier": {"type": "number", "minimum": 1.0, "maximum": 2.5, "nullable": false}
+      }
+    },
+    "shipments": {
+      "primary_key": "shipment_id",
+      "id_regex": "^SHP-2026-\\d{6}$",
+      "columns": {
+        "shipment_id": {"type": "string", "nullable": false},
+        "supplier_id": {"type": "string", "nullable": false},
+        "origin_facility_id": {"type": "string", "foreign_key": "facilities.facility_id", "nullable": false},
+        "destination_facility_id": {"type": "string", "foreign_key": "facilities.facility_id", "nullable": false},
+        "service_level_id": {"type": "string", "foreign_key": "service_levels.service_level_id", "nullable": false},
+        "route_id": {"type": "string", "foreign_key": "routes.route_id", "nullable": false},
+        "created_at": {"type": "string", "format": "date-time", "nullable": false},
+        "promised_delivery_at": {"type": "string", "format": "date-time", "nullable": false},
+        "actual_delivery_at": {"type": "string", "format": "date-time", "nullable": true},
+        "current_status": {"type": "string", "enum": ["CREATED", "IN_TRANSIT", "DELIVERED", "CANCELLED"], "nullable": false},
+        "final_delay_label": {"type": "string", "enum": ["ON_TIME", "DELAYED", "SEVERELY_DELAYED", "CANCELLED"], "nullable": false},
+        "is_rerouted": {"type": "boolean", "nullable": false}
+      }
+    },
+    "shipment_legs": {
+      "primary_key": "leg_id",
+      "id_regex": "^LEG-SHP-2026-\\d{6}-\\d{2}$",
+      "columns": {
+        "leg_id": {"type": "string", "nullable": false},
+        "shipment_id": {"type": "string", "foreign_key": "shipments.shipment_id", "nullable": false},
+        "leg_sequence": {"type": "integer", "minimum": 1, "maximum": 4, "nullable": false},
+        "from_facility_id": {"type": "string", "foreign_key": "facilities.facility_id", "nullable": false},
+        "to_facility_id": {"type": "string", "foreign_key": "facilities.facility_id", "nullable": false},
+        "carrier_id": {"type": "string", "foreign_key": "carriers.carrier_id", "nullable": false},
+        "planned_depart_at": {"type": "string", "format": "date-time", "nullable": false},
+        "planned_arrive_at": {"type": "string", "format": "date-time", "nullable": false},
+        "actual_depart_at": {"type": "string", "format": "date-time", "nullable": true},
+        "actual_arrive_at": {"type": "string", "format": "date-time", "nullable": true},
+        "leg_status": {"type": "string", "enum": ["PLANNED", "IN_TRANSIT", "COMPLETED", "SUPERSEDED"], "nullable": false}
+      }
+    },
+    "tracking_events": {
+      "primary_key": "event_id",
+      "id_regex": "^EVT-SHP-2026-\\d{6}-\\d{6}$",
+      "columns": {
+        "event_id": {"type": "string", "nullable": false},
+        "shipment_id": {"type": "string", "foreign_key": "shipments.shipment_id", "nullable": false},
+        "leg_id": {"type": "string", "foreign_key": "shipment_legs.leg_id", "nullable": true},
+        "facility_id": {"type": "string", "foreign_key": "facilities.facility_id", "nullable": true},
+        "event_type": {"type": "string", "nullable": false},
+        "event_time": {"type": "string", "format": "date-time", "nullable": false},
+        "ingestion_time": {"type": "string", "format": "date-time", "nullable": false},
+        "source_system": {"type": "string", "nullable": false},
+        "is_duplicate_of": {"type": "string", "foreign_key": "tracking_events.event_id", "nullable": true},
+        "sequence_no": {"type": "integer", "minimum": 1, "nullable": false}
+      }
+    },
+    "eta_estimates": {
+      "primary_key": "eta_id",
+      "id_regex": "^ETA-SHP-2026-\\d{6}-\\d{8}T\\d{4}$",
+      "columns": {
+        "eta_id": {"type": "string", "nullable": false},
+        "shipment_id": {"type": "string", "foreign_key": "shipments.shipment_id", "nullable": false},
+        "prediction_time": {"type": "string", "format": "date-time", "nullable": false},
+        "predicted_delivery_at": {"type": "string", "format": "date-time", "nullable": false},
+        "method": {"type": "string", "enum": ["PLAN_BASED", "PROGRESS_BASED", "CONTEXT_AWARE", "ML_GRADIENT_BOOST"], "nullable": false},
+        "features_cutoff_time": {"type": "string", "format": "date-time", "nullable": false},
+        "n_events_used": {"type": "integer", "minimum": 0, "nullable": false},
+        "predicted_delay_probability": {"type": "number", "minimum": 0.0, "maximum": 1.0, "nullable": false}
+      }
+    },
+    "delay_reasons": {
+      "primary_key": "delay_id",
+      "id_regex": "^DLY-2026-\\d{6}$",
+      "columns": {
+        "delay_id": {"type": "string", "nullable": false},
+        "reason_code": {"type": "string", "enum": ["WEATHER", "FACILITY_QUEUE", "CARRIER_DELAY", "ROUTE_CHANGE", "CALENDAR_CLOSURE", "LATE_PICKUP"], "nullable": false},
+        "description": {"type": "string", "nullable": false},
+        "severity": {"type": "integer", "minimum": 1, "maximum": 5, "nullable": false}
+      }
+    },
+    "shipment_delay_reasons": {
+      "primary_key": "attribution_id",
+      "id_regex": "^SDR-\\d{8}$",
+      "columns": {
+        "attribution_id": {"type": "string", "nullable": false},
+        "shipment_id": {"type": "string", "foreign_key": "shipments.shipment_id", "nullable": false},
+        "leg_id": {"type": "string", "foreign_key": "shipment_legs.leg_id", "nullable": true},
+        "delay_id": {"type": "string", "foreign_key": "delay_reasons.delay_id", "nullable": false},
+        "delay_hours_attributed": {"type": "number", "minimum": 0.0, "nullable": false}
+      }
+    }
+  }
+}
