@@ -332,9 +332,9 @@ Generated datasets are created locally and do not need to be committed in full t
 ### Clone the repository
 
 ```powershell
-git clone https://github.com/srinivas377/shipment-eta-delay-simulator.git
+git clone https://github.com/Deepa-S-Chebbi/shipment-eta-intelligence.git
 
-cd shipment-eta-delay-simulator
+cd shipment-eta-intelligence
 ```
 
 ### Create a virtual environment
