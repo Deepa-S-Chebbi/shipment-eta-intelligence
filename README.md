@@ -418,26 +418,26 @@ The dashboard helps users understand shipment progress, identify potential delay
 
 The YottaFlex AI Logistics Dashboard provides an interactive interface for monitoring shipment performance, tracking delays, inspecting facility congestion, and evaluating ETA predictions.
 
-### 1. Executive Dashboard
-![Executive Dashboard](docs/images/dashboard-overview.png)
+### 11.1. Executive Dashboard
+![Executive Dashboard](docs/img/dashboard-overview.png)
 
-### 2. Shipment Explorer & Timeline
-![Shipment Explorer](docs/images/shipment-explorer.png)
+### 11.2. Shipment Explorer & Timeline
+![Shipment Explorer](docs/img/shipment-explorer.png)
 
-### 3. Facility Queues & Congestion
-![Facility Queues](docs/images/facility-queues.png)
+### 11.3. Facility Queues & Congestion
+![Facility Queues](docs/img/facility-queues.png)
 
-### 4. Data Quality & Anomaly Audit
-![Anomaly Audit](docs/images/anomaly-audit.png)
+### 11.4. Data Quality & Anomaly Audit
+![Anomaly Audit](docs/img/anomaly-audit.png)
 
-### 5. Operations Exception Cockpit
-![Operations Cockpit](docs/images/operations-cockpit.png)
+### 11.5. Operations Exception Cockpit
+![Operations Cockpit](docs/img/operations-cockpit.png)
 
-### 6. ETA Model Evaluation
-![ETA Model Evaluation](docs/images/eta-model-evaluation.png)
+### 11.6. ETA Model Evaluation
+![ETA Model Evaluation](docs/img/eta-model-evaluation.png)
 
-### 7. Timestamp Leakage Audit
-![Timestamp Leakage Audit](docs/images/timestamp-leakage-audit.png)
+### 11.7. Timestamp Leakage Audit
+![Timestamp Leakage Audit](docs/img/timestamp-leakage-audit.png)
 
 ## 12. Data Provenance and Licensing
 
